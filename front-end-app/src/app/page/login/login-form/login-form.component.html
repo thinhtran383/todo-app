@@ -3,9 +3,8 @@
   <div class="mb-4">
     <p-iftalabel>
       <input pInputText
-             class="w-full h-13 "
+             class="w-full h-16"
              size="small"
-             type="email"
              formControlName="username"
              id="username"
              placeholder="Enter your email..."
@@ -20,13 +19,13 @@
   </div>
 
   <!-- Password Input -->
-  <div class="mb-4">
+  <div class="mb-4 ">
     <p-iftalabel>
       <p-password [feedback]="false"
                   size="small"
                   [toggleMask]="true"
                   styleClass="w-full"
-                  inputStyleClass="w-full !h-13"
+                  inputStyleClass="!h-16 w-full"
                   formControlName="password"
                   id="password"
                   placeholder="Enter your password..."
@@ -48,8 +47,8 @@
 
   <!-- Submit Button -->
   <button type="submit"
-          class="w-full bg-[#ca4f44] text-white py-2 rounded-lg font-semibold cursor-pointer
-                active:scale-95 transition transform duration-150"
+          class="w-full bg-[#ca4f44] text-white py-2 rounded-lg  cursor-pointer
+                active:scale-95 transition transform duration-150 !p-3.5 text-lg font-bold"
   >
     Log in
   </button>

@@ -4,6 +4,7 @@ import {IftaLabel} from 'primeng/iftalabel';
 import {Password} from 'primeng/password';
 import {InputText} from 'primeng/inputtext';
 import {NgClass} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login-form',
@@ -26,7 +27,7 @@ export class LoginFormComponent {
 
   constructor(private fb: FormBuilder) {
     this.loginForm = this.fb.group({
-      username: ['', [Validators.required, Validators.email]],
+      username: ['', [Validators.required]],
       password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
